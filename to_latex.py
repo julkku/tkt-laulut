@@ -62,7 +62,8 @@ def generate_song(data):
         t += "\\{0}}}".format(SONGTITLE_POST_SKIP) # close \leftline\parbox
     out.append(t)
 
-    out.append("\\index{{{}}}".format(index_hack(title)))
+    for name in [title] + data["alternate_titles"]:
+    	out.append("\\index{{{}}}".format(index_hack(name)))
 
     first = True
 
