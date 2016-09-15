@@ -28,7 +28,11 @@ def line_hack(line):
     line = line.replace("+", "\\texttt{+}")
     line = line.replace(";,;", ":,:")
     if line.startswith(":,:"):
-        line = "\\hspace{0pt-\\widthof{:,: }}"+line
+        line = "\\hspace{0pt-\\widthof{:,: }}" + line
+    if line.startswith("\\# :,:"):
+        line = "\\hspace{0pt-\\widthof{\\# }-\\widthof{:,: }}" + line
+    elif line.startswith("\\# "):
+        line = "\\hspace{0pt-\\widthof{\\# }}" + line
     if line:
         line += "\\\\"
     return line
