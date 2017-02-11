@@ -16,6 +16,7 @@
 % indent on newline
 \setlength{\vindent}{0.5cm}
 
+% header configuration
 \pagestyle{fancy}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \fancyhf{}
@@ -30,20 +31,12 @@
 
 {\makeatletter\gdef\reallynopagebreak{\par\nopagebreak\@nobreaktrue}}
 
-\newenvironment{glue}
-  {\par\nobreak\vfil\penalty0\vfilneg
-   \vtop\bgroup}
-  {\par\xdef\tpd{\the\prevdepth}\egroup
-   \prevdepth=\tpd}
-
 %\DeclareUnicodeCharacter{00A0}{~}
 
 \begin{document}
 \raggedbottom
 
-
 \small
-
 \input{laulut.tex}
 
 \printindex

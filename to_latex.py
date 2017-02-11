@@ -27,6 +27,7 @@ def line_hack(line):
     line = line.replace("%", "\\%")
     line = line.replace("+", "\\texttt{+}")
     line = line.replace(";,;", ":,:")
+    # place :,: and # modifiers before line start
     if line.startswith(":,:"):
         line = "\\hspace{0pt-\\widthof{:,: }}" + line
     if line.startswith("\\# :,:"):
@@ -49,20 +50,16 @@ def generate_song(data):
     out.append("%")
     out.append("% " + title)
     out.append("%")
+    # set the section name to show in header
     out.append(("\\sectionmark{{ {0}. {1} }}%").format(index,title))
-    #out.append("\\invisiblechapter{{{0}}}".format(index))
-    # minipages for title+first verse and each verse to avoid bad page breaks
+
+    # wrap title and first verse in the same minipage to prevent pagebreak between them
     out.append("\\noindent\\begin{minipage}{\\linewidth}")
     out.append(SONGTITLE_PRE_SKIP)
 
     # song number offset by correct amount
     out.append("\\hspace{{{2}-\\widthof{{\\large\\bf {0}.{1}}}}}{{\\large\\bf {0}.{1}}}"
         .format(index, SONG_NUMBER_SEP, SONGTITLE_INDENT))
-
-    # set songtitle and number variables
-    #out.append("\\def \\tktsongtitle {{{0}}}".format(title))
-    #out.append("\\def \\tktsongindex {{{0}}}".format(index))
-    #out.append("\\chead{{{0}}}".format(title))
 
     # song title in parbox for line wrapping
     t = "\\parbox[t]{{0.85\\linewidth}}{{\\raggedright {{\\large\\bf {}}}".format(title)
@@ -72,23 +69,26 @@ def generate_song(data):
         t += "\\{0}}}".format(SONGTITLE_POST_SKIP) # close \leftline\parbox
     out.append(t)
 
+    # add index entry for title and any alternate titles
     for name in [title] + data["alternate_titles"]:
     	out.append("\\index{{{}}}".format(index_hack(name)))
 
     first = True
 
     for verse in lyrics:
+        # start a new minipage if not the first verse
         if not first:
             out.append("\\noindent\\begin{minipage}{\\linewidth}")
         else:
             first = False
 
+        # wrap lines in verse block
         out.append("\\begin{verse}")
-
         for line in verse:
             out.append("\t" + line_hack(line))
-
         out.append("\\end{verse}")
+
+        # close minipage and add verse spacing
         out.append("\\end{minipage}\\\\[" + VERSE_SKIP + "]")
 
     return "\n".join(out)
