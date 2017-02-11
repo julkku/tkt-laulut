@@ -1,20 +1,25 @@
 \documentclass{book}
 
 \usepackage[a6paper, portrait, outer=1cm, inner=1.5cm, tmargin=1.7cm, bmargin=1.5cm]{geometry}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc} 
 \usepackage{verse}
 \usepackage{imakeidx}
 \usepackage{expl3}
-\usepackage{calc}
+\usepackage{calc} % widthof
 \usepackage{tabto}
 \usepackage{titlesec}
-\usepackage{fancyhdr}
+\usepackage{fancyhdr} % headers
+\usepackage{etoolbox} % verse raggedright
+
+\AtBeginEnvironment{verse}{\raggedright}
+
+% indent on newline
+\setlength{\vindent}{0.5cm}
 
 \pagestyle{fancy}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \fancyhf{}
-\chead{\rightmark}
-\lhead{\leftmark}
+\lhead{\rightmark}
 \rhead{\thepage}
 
 \makeindex[title=Hakemisto,intoc,columns=1]

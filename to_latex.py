@@ -49,8 +49,7 @@ def generate_song(data):
     out.append("%")
     out.append("% " + title)
     out.append("%")
-    out.append("\\renewcommand{{\\rightmark}}{{{0}}}%".format(title))
-    out.append("\\renewcommand{{\\leftmark}}{{{0}}}%".format(index))
+    out.append(("\\sectionmark{{ {0}. {1} }}%").format(index,title))
     #out.append("\\invisiblechapter{{{0}}}".format(index))
     # minipages for title+first verse and each verse to avoid bad page breaks
     out.append("\\noindent\\begin{minipage}{\\linewidth}")
