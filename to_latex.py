@@ -49,7 +49,9 @@ def generate_song(data):
     out.append("%")
     out.append("% " + title)
     out.append("%")
-
+    out.append("\\renewcommand{{\\rightmark}}{{{0}}}%".format(title))
+    out.append("\\renewcommand{{\\leftmark}}{{{0}}}%".format(index))
+    #out.append("\\invisiblechapter{{{0}}}".format(index))
     # minipages for title+first verse and each verse to avoid bad page breaks
     out.append("\\noindent\\begin{minipage}{\\linewidth}")
     out.append(SONGTITLE_PRE_SKIP)
@@ -57,6 +59,11 @@ def generate_song(data):
     # song number offset by correct amount
     out.append("\\hspace{{{2}-\\widthof{{\\large\\bf {0}.{1}}}}}{{\\large\\bf {0}.{1}}}"
         .format(index, SONG_NUMBER_SEP, SONGTITLE_INDENT))
+
+    # set songtitle and number variables
+    #out.append("\\def \\tktsongtitle {{{0}}}".format(title))
+    #out.append("\\def \\tktsongindex {{{0}}}".format(index))
+    #out.append("\\chead{{{0}}}".format(title))
 
     # song title in parbox for line wrapping
     t = "\\parbox[t]{{0.85\\linewidth}}{{\\raggedright {{\\large\\bf {}}}".format(title)

@@ -8,6 +8,14 @@
 \usepackage{calc}
 \usepackage{tabto}
 \usepackage{titlesec}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhf{}
+\chead{\rightmark}
+\lhead{\leftmark}
+\rhead{\thepage}
 
 \makeindex[title=Hakemisto,intoc,columns=1]
 
