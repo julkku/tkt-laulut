@@ -133,7 +133,7 @@ def main(order_file, songs_file):
             order[row[5]] = {
                 "number": row[0] if len(row[0]) else None,
                 "title": row[3],
-                "melody": row[9],
+                "melody": "(" + row[9] + ")",
                 "alts": alts
             }
 
@@ -173,13 +173,12 @@ def main(order_file, songs_file):
 
         if d["number"] is None:
             number = count
-            count += 1
         else:
             number = d["number"]
+        count += 1
 
         title = d["title"]
         melody = d["melody"] if len(d["melody"]) else None
-
 
         data.append({
             "title": d["title"],
