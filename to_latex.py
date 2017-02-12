@@ -49,6 +49,10 @@ def line_hack(line, is_line=True):
         line = "\\hspace{0pt-\\widthof{\\# }-\\widthof{:,: }}" + line
     elif line.startswith("\\# "):
         line = "\\hspace{0pt-\\widthof{\\# }}" + line
+    elif line.startswith("A: "):
+        line = "\\hspace{0pt-\\widthof{A: }}" + line
+    elif line.startswith("B: "):
+        line = "\\hspace{0pt-\\widthof{B: }}" + line
     if line:
         line += "\\\\"
     return line
@@ -66,7 +70,7 @@ def generate_song(data):
     out.append("% " + title)
     out.append("%")
     # set the section name to show in header
-    out.append(("\\sectionmark{{ {0}. {1} }}").format(index, title))
+    out.append(("\\sectionmark{{ {0}. }}").format(index))
 
     # wrap title and first verse in the same minipage to prevent pagebreak between them
     out.append("\\noindent\\begin{minipage}{\\linewidth}")
