@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 from os import listdir
 from os.path import isfile, join
+from io import StringIO
+from collections import OrderedDict
+from sys import stderr
 import re
 import csv
 
@@ -25,6 +28,8 @@ def line_hack(line):
     """Replace problematic characters with latex commands."""
     line = line.replace("#", "\\#")
     line = line.replace("%", "\\%")
+    line = line.replace("_", "\\_")
+    line = line.replace("|", "\\|")
     line = line.replace("+", "\\texttt{+}")
     line = line.replace(";,;", ":,:")
     # place :,: and # modifiers before line start
@@ -94,41 +99,85 @@ def generate_song(data):
     return "\n".join(out)
 
 
-def main(order_file, song_dir):
-    order = []
-    with open(order_file, "r") as f:
+def main(order_file, songs_file):
+    order = OrderedDict()
+
+    with open(order_file, "r", newline="") as f:
+        f.readline()
         for row in csv.reader(f):
-            order.append({
-                "number": row[0] if len(row[0]) > 0 else None,
-                "file": row[1] + ".txt",
-                "alternate_titles": row[2:]
-            })
+            for i, a in enumerate(row):
+                row[i] = a.strip()
+
+            if len(row[4]):
+                alts = []
+                for i in csv.reader(StringIO(row[4])):
+                    for j in i:
+                        alts.append(j)
+            else:
+                alts = []
+
+            if row[5] in order:
+                print("There is already a song with id: \"{}\".".format(row[5]), file=stderr)
+                continue
+
+            order[row[5]] = {
+                "number": row[0] if len(row[0]) else None,
+                "title": row[3],
+                "melody": row[9],
+                "alts": alts
+            }
+
+    lyrics = {}
+    with open(songs_file, "r", newline="") as f:
+        f.readline()
+        for row in csv.reader(f):
+            lines = row[1].split("\n")
+            lines = [i.strip() for i in lines]
+            lines = "\n".join(lines)
+            lines = lines.split("\n\n")
+            lines[:] = [i.split("\n") for i in lines]
+            """
+            sakeistot = row[1].split("\n\n")
+            sakeet = [sakeisto.split("\n") for sakeisto in sakeistot]
+
+            sanat = []
+            for i in sakeet:
+                sakeisto = []
+                for j in i:
+                    if len(j):
+                        sakeisto.append(j.strip())
+                if len(sakeisto):
+                    sanat.append(sakeisto)
+            """
+            # sakeet[:] = [sae for sae in sakeet if len(sae)]
+            # from pprint import pprint; pprint(sanat)
+            lyrics[row[0].strip()] = lines
 
     count = 0
     data = []
-    for i in order:
-        with open(join(song_dir, i["file"]), "r") as f:
-            lines = [l.strip() for l in f]
 
-            if i["number"] is None:
-                number = count
-                count += 1
-            else:
-                number = i["number"]
+    for i, d in order.items():
+        if i not in lyrics:
+            print("\"{}\" doesn't have lyrics.".format(i), file=stderr)
+            continue
 
-            title = lines[0]
-            melody = lines[1] if len(lines[1]) > 0 else None
-            lyrics = "\n".join(lines[2:])
-            lyrics = lyrics.split("\n\n")
-            lyrics[:] = [line.split("\n") for line in lyrics]
+        if d["number"] is None:
+            number = count
+            count += 1
+        else:
+            number = d["number"]
 
-            data.append({
-                "title": title,
-                "alternate_titles": i["alternate_titles"],
-                "number": number,
-                "melody": melody,
-                "lyrics": lyrics
-            })
+        title = d["title"]
+        melody = d["melody"] if len(d["melody"]) else None
+
+
+        data.append({
+            "title": d["title"],
+            "alternate_titles": d["alts"],
+            "number": number,
+            "melody": d["melody"] if len(d["melody"]) else None,
+            "lyrics": lyrics[i]
+        })
 
     for i in data:
         print(generate_song(i))
