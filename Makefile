@@ -9,5 +9,5 @@ laulukirja.pdf: laulukirja.tex laulut.tex
 	pdflatex laulukirja.tex && \
 	pdflatex laulukirja.tex
 
-laulut.tex: lyrics.csv ordering.csv
+laulut.tex: to_latex.py ordering.csv lyrics.csv
 	python3 to_latex.py ordering.csv lyrics.csv > laulut.tex
