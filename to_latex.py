@@ -56,7 +56,7 @@ def generate_song(data):
     out.append("% " + title)
     out.append("%")
     # set the section name to show in header
-    out.append(("\\sectionmark{{ {0}. {1} }}%").format(index,title))
+    out.append(("\\sectionmark{{ {0}. {1} }}").format(index,title))
 
     # wrap title and first verse in the same minipage to prevent pagebreak between them
     out.append("\\noindent\\begin{minipage}{\\linewidth}")
