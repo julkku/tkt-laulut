@@ -29,3 +29,5 @@ It should also tell quite well what to put in to the column.
     they'll probably break the build.
 * Be careful with math characters,
     they need to be surrounded with \( \).
+* For italics use `\textit{Text to be italized.}`
+    (and textbf similarly for bold).
