@@ -1,106 +1,152 @@
-,aku_ankka
-,aqua_vera
-,bohemian_rhapsody
-,brännvin_vatten
-,de_brevitae_vitae
-,drunken_sailor
-,eino_leinon_juomalaulu
-,ei_tippa_tapa
-,eurovision_juomalaulu
-,felix
-,finlandia
-,finlandssvensk_snapsvisa
-,gurulah
-,hauki_ja_viina
-,hei_vahtimestari
-,helan_gor
-,hell_and_gore
-,henkilokunta
-,hypermedialaulu
-,internationaali
-,internationalen
-,intian_kuu
-,jallutähden_alla
-,jallu
-,jaloviinaa
-,jarjestoasiantuntijan_runtulaulu
-,jos_eukkosi_kieltää_sua_juomasta
-,joutsenlaulu
-,juodaan_viinaa
-,juomalaulu
-,kaks_kisälliä
-,kalliolle_kumpulamme
-,kalmarevisan
-,kansainvälinen
-,karhuviinaa
-,ken_on_fuksi
-,kirkossa
-,klurre_kädelläsi
-,klusterilainen
-,koff
-,ko-ko-ko-koskenkorvaa
-,koodaillaan
-,koska_meitä_käsketään
-,krimin_kriisi
-,kun_mä_kuolen
-,lapin_kulta_kaanon
-,lapsuuden_toverille
-,lärvit
-,lasi_täyttyy_oluesta
-,laulu_uudelle
-,leppätalo
-,leukojen_välliin
-,livet_är_härligt
-,luonnontieteilijän_uni
-,luukkaisen_poika
-,meksikon_pikapano
-,mielihaluja
-,minnet
-,minun_juomani_kossu_on
-,muinaisten_valssi
-,murheellisten_bittien_maa
-,nämä_lääkkeet
-,neuvostoliiton_hymni
-,niin_minä_neitonen_sinulle_laulan
-,nisti_ja_noori
-,nocturne
-,no_onkos_tullut_kesä
-,olutkaanon
-,ölvisa
-,oman_kullan_silmät
-,onomatopoeettinen_alkoholiliike
-,paavi_ja_sulttaani
-,pienet_käärmeet
-,pienet_konjakit
-,pikkukakkosen_posti
-,puheenjohtajan_juomalaulu
-,pumppulaulu
-,punschen_kommer
-,raittiuslaulu
-,rakenteisiin_asti
-,romanssi
-,rosvo_roope
-,ryyppää_vaan
-,ryyppy_saapuu
-,sähkö_atk_laulu
-,sauvakirkon_polttaja
-,sisään
-,skumppaa_punkun_kaa
-,snapsien_kaveri
-,sörnai_gusha
-,suhteellisen_rivakka_turkulainen_juomalaulu
-,syphilis
-,tänään_otetaan
-,teinilaulu
-,tietoliikennelaulu
-,unkarin_viini
-,urhometso
-,varpunen_jouluaamuna
-,vesipoikien_marssi
-,viidestoista_vuosi
-,viinaa_vetta
-,vi_ska_dricka_hela_natten
-,vitutuslaulu
-,vit_vecka
-,vodka_vodka
-,yogi_bear
+n,,,Name,alt ,Filename,Tilanne,Kategoria,Kategoria,Sävel,Flag (pd=pos.dup. d=dup. p=perustele),Kommentit,Tarinaa laulukirjaan
+,,,365 Days of Vappu,,365_days_of_vappu,todo,väännöt,english,12 Days of Christmas,,"// On the first day of Vappu, my känni gave to mee: One laulukirja // two vergi bottles // three shots of jäeger // four lapin kulta",
+,,,500 Miles,,500_miles,todo,english,,,,,
+,,a,A Finnish Drinking Song,Introduction to Finnish Partying ,a_finnish_drinking_song,sanat,english,NYT,Suhteellisen rivakka turkulainen juomalaulu,,Parempi nimi???,
+,,,Ace of Spades,,ace_of_spades,todo,english,,,,,
+,1,a,Aku Ankka,,aku_ankka,sanat,väännöt,lasten,,p,mitä nää akkarivittusaatanat on ,
+,,,All Star,,all_star,sanat,english,meme,Smash Mouth,,,
+,,,Always Look on the Bright Side of Life,,always_look_on_the_bright_side_of_life,todo,english,,Monty Python,,,
+,2,a,Aqua Vera,,aqua_vera,sanatok,oletus,,Alle Vögel sind schon da / Terve teille lintuset,,,
+,,,Barbie Girl,,barbie_girl,todo,english,,,,,
+,3,a,Bohemian Rhapsody,,bohemian_rhapsody,sanatok,english,,Queen,,,
+v,4,a,Brännvin Vatten,"Viinaa, Vettä",brännvin_vatten,sanatok,oletus,,Jeeper creepers / Kissa vieköön,,,
+,,,Call Me Maybe,,call_me_maybe,todo,english,,Carly Rae Jepsen,,,
+,5,a,De Brevitae Vitae,,de_brevitae_vitae,sanat,kansallistms,,,,,
+,,,Dodo sorsa,,dodo_sorsa,todo,biisit,lasten,,,,
+,6,a,Drunken Sailor,What Shall we do with the Drunken Sailor,drunken_sailor,sanat,english,,,,,
+,7,a,Ei tippa tapa,,ei_tippa_tapa,sanat,biisit,,Juice Leskinen: Ei tippa tapa ,,,
+,8,a,Eino Leinon juomalaulu,,eino_leinon_juomalaulu,sanat,oletus,,Te Deum,,,
+,9,a,Eurovision juomalaulu,Eurovision,eurovision_juomalaulu,sanat,oletus,,Eurovision tunnari,,,
+,,,Eye of the Tiger ,,eye_of_the_tiger,todo,english,,,,,
+,10,a,Felix,,felix,sanat,special,paikalliset,,,,Kappale kertoo TKO-älyn 2016 varapuheenjohtajasta nimeltään Felix.
+,11,a,Finlandia,,finlandia,sanat,kansallistms,,,,,
+,12,a,Finlandssvensk Snapsvisa,,finlandssvensk_snapsvisa,sanat,snapsi,NYT,,,,
+,14,a,Gurulah,,gurulah,sanat,väännöt,,,,,
+,15,a,Hauki ja viina,,hauki_ja_viina,sanat,oletus,darra,,,,
+,16,a,Hei vahtimestari,,hei_vahtimestari,sanat,oletus,,,,,
+r,17,a,Helan Gor,,helan_gor,sanat,oletus,,,,,
+r+1,18,a,Hell and Gore,,hell_and_gore,sanat,english,,,,,
+m<n,19,a,Henkilokunta,,henkilokunta,sanat,oletus,,Inke Pinke Parlevuu / Kiinan pelastusarmeijassa,,,
+,,,Hey-song,,hey-song,todo,english,meme,,,,
+,20,a,Hypermedialaulu,,hypermedialaulu,sanat,oletus,Kaanon,Sähkö ATK laulu,pd,see lapin kulta canon,
+,,,Ievan Polkka,,ievan_polkka,todo,biisit,,,,,
+,21,a,Internationaali,,internationaali,sanat,väännöt,,,p,,
+,22,a,Internationalen,Mera Brännvin,internationalen,sanat,oletus,,L'Internationale,,,
+,23,a,Intian kuu,,intian_kuu,sanat,oletus,,,,,
+,24,a,Jallu,,jallu,sanat,väännöt,,Sika,,Sävel: Sika,
+,25,a,Jallutähden alla,,jallutähden_alla,sanat,biisit,,Alla pohjantähden,,,
+,,,Jallutyttö,,jallutyttö,todo,biisit,,,,,
+,26,a,Jaloviinaa,,jaloviinaa,sanat,biisit,,,,,
+,27,a,Jarjestoasiantuntijan runtulaulu,,jarjestoasiantuntijan_runtulaulu,sanat,oletus,,Minä soitan harmonikkaa,,,
+,,,Jesussoldat,,jesussoldat,todo,usk/pol,,,,,
+,28,a,Jos eukkosi kieltää sua juomasta,,jos_eukkosi_kieltää_sua_juomasta,sanat,oletus,,,,,
+,,a,Joutsenlaulu,,joutsenlaulu,sanat,biisit,,,,,"Vaikka ongelmia oli jatkuvasti, viimeinen naula kantaan klusterin kunnostautumisessa oli eräs arkiaamupäiväinen Joutsenlaulu-Singstar suoritus. "
+,29,a,Juodaan viinaa,,juodaan_viinaa,sanat,biisit,,,,,
+,30,a,Juomalaulu,,juomalaulu,poistetaan,,,,d,onkos tullut kesä,
+,,,Kahvimaitoa,,kahvimaitoa,todo,biisit,,Arttu Wiskari,,,
+,31,a,Kaks kisälliä,,kaks_kisälliä,sanat,väännöt,,,,,
+,32,a,Kalliolle Kumpulamme,,kalliolle_kumpulamme,sanat,väännöt,,,,,
+,33,a,Kalmarevisan,,kalmarevisan,sanat,snapsi,,,,,
+,34,a,Kansainvälinen,,kansainvälinen,sanat,usk/pol,,,,,
+,-,a,Kansallislaulu,Maamme,kansallislaulu,ei,kansallistms,,,,"// laitetaan tän nimen alle Sandstorm, ja Maamme alle oikea",
+,35,a,Karhuviinaa,,karhuviinaa,sanat,oletus,lasten,,,,
+n,36,a,Ken on fuksi,ken onpi fuksi,ken_on_fuksi,sanat,special,,,,,
+,,a,Kirkossa,,kirkossa,sanat,,,,,,
+,37,a,Klurre kädelläsi,,klurre_kädelläsi,sanat,väännöt,paikalliset,Herra kädelläsi,,,
+,38,a,Klusterilainen,,klusterilainen,sanat,????,paikalliset,,,,
+,39,a,Ko-Ko-Ko-Koskenkorvaa,,ko-ko-ko-koskenkorvaa,sanat,oletus,,,,Mitkä kaikki säkeet // ei inttisäkeitä :DD ,
+,40,a,Koff,,koff,sanat,väännöt,,,,,
+,41,a,Koodaillaan,,koodaillaan,sanat,väännöt,,Hengaillaan,,,
+,42,a,Koska meitä käsketään,,koska_meitä_käsketään,sanat,????,,Tuiki tuiki tähtönen,,,
+,43,a,Krimin kriisi,,krimin_kriisi,sanat,väännöt,,Unkarin Viini,p,Onks tää niiku lääst siison ,
+,44,a,Kun mä kuolen,,kun_mä_kuolen,sanat,leikit,lasten,,,,
+,45,a,Lapin Kulta kaanon,Olutkaanon,lapin_kulta_kaanon,sanat,oletus,Kaanon,Ölvisa,,,
+,46,a,Lapsuuden toverille,,lapsuuden_toverille,sanat,neidot,,,p,,
+,49,a,Lärvit,,lärvit,sanat,oletus,,Star Wars: Imperial March,,,
+,47,a,Lasi täyttyy oluesta,,lasi_täyttyy_oluesta,sanat,väännöt,,,,,
+,48,a,Laulu Uudelle,,laulu_uudelle,sanat,väännöt,,Mombasa,,,
+,,,Leikkaamaan,,leikkaamaan,todo,usk/pol,,säv. Baarikäpänen & san. Julius,,,HYY:n sitsilaulukilpailun voittaja 2016
+,,,Lenin-Setä asuu Venäjällä,,lenin-setä_asuu_venäjällä,todo,usk/pol,,,,,
+,50,a,Leppätalo,,leppätalo,sanat,väännöt,,Täti Monika,,,
+,51,a,Leukojen välliin,,leukojen_välliin,sanat,oletus,,Karjalan poikia,,,
+,52,a,Livet Är Härligt,,livet_är_härligt,sanat,oletus,,Kasakkapartio,,,
+,,,Living on a Prayer,,living_on_a_prayer,todo,english,,Bon Jovi,,,
+,53,a,Luonnontieteilijän uni,,luonnontieteilijän_uni,sanat,special,,Sininen uni,,,
+,54,a,Luukkaisen poika,,luukkaisen_poika,sanat,väännöt,,,,Tarvitsee kirjoittaa myös Artolle biisi,
+,,,Maija,,maija,todo,biisit,,Kliff,,,
+,55,a,Meksikon pikapano,,meksikon_pikapano,sanat,väännöt,,Meksikon pikajuna,,hieman pitkä ja ehkä kiusallinen,
+,56,a,Mielihaluja,Silja Line Special,mielihaluja,sanat,oletus,,Un homme et une femme,,,
+,,,Minä soitan harmonikkaa,,minä_soitan_harmonikkaa,todo,biisit,lasten,,,,
+,57,a,Minnet,,minnet,sanat,oletus,,Memory,,,
+,58,a,Minun juomani kossu on,,minun_juomani_kossu_on,sanat,väännöt,,,,,
+,,,Mökkitie,,mökkitie,todo,biisit,,Arttu Wiskari,,,
+,59,a,Muinaisten valssi,Norppa ja kultisti,muinaisten_valssi,sanat,väännöt,,Vanhojapoikia viiksekkäitä,,,
+,60,a,Murheellisten bittien maa,,murheellisten_bittien_maa,sanat,väännöt,,Murheellisten laulujen maa,,,
+,,,Mysterious Ticking Noise ,,mysterious_ticking_noise,todo,english,,,,,
+,61,a,Nämä lääkkeet,,nämä_lääkkeet,sanat,????,,,p,,
+,62,a,Neuvostoliiton hymni,,neuvostoliiton_hymni,sanat,usk/pol,,,,,
+,,,Never Gonna Give You Up,,never_gonna_give_you_up,todo,english,meme,Rick Astley,,,
+,63,a,Niin minä neitonen sinulle laulan,,niin_minä_neitonen_sinulle_laulan,miksi,neidot,,,p,tarviiks tälläsii lääkisseksismihömpötyksiä,
+,64,a,Nisti ja Noori,,nisti_ja_noori,sanat,väännöt,,Päivänsäde ja menninkäinen,,,
+,65,a,No onkos tullut kesä,,no_onkos_tullut_kesä,sanat,oletus,,,,tarkista onks kaikki säkeistöt,
+,66,a,Nocturne,,nocturne,sanat,neidot,,,p,,
+,,,Numa Numa,,numa_numa,todo,english,meme,,,,
+,,,Nyt ryypätään,,nyt_ryypätään,todo,perus,,O tannebaum,,sanat matlulta,
+,67,a,Olutkaanon,,olutkaanon,poistetaan,pois,kaanon,,,see hypermedia,
+,68,a,Ölvisa,,ölvisa,sanat,snapsi,kaanon,Jaakko-kulta,,// sama ku muut kaanonit mut ruotsiks vittu,
+,69,a,Oman kullan silmät,,oman_kullan_silmät,sanat,neidot,,,p,,
+,70,a,Onomatopoeettinen alkoholiliike,,onomatopoeettinen_alkoholiliike,sanat,leikit,lasten,,,Jussi säkeistö must,
+,,,Oodi sitoutumattomille,,oodi_sitoutumattomille,todo,usk/pol,,todo ,,Tai se MATLUN kirjotettu ,
+,71,a,Paavi ja Sulttaani,,paavi_ja_sulttaani,sanat,oletus,,,,,
+,72,a,Pienet käärmeet,,pienet_käärmeet,sanat,oletus,lasten,Kuningaskobra,,,
+,73,a,Pienet konjakit,,pienet_konjakit,sanat,väännöt,lasten,,p,,
+,74,a,Pikkukakkosen posti,,pikkukakkosen_posti,sanat,oletus,lasten,,,,
+,,,Pohjois Karjalaan,,pohjois_karjalaan,sanat,biisit,,,,Eeppisin sitsilaulu,
+,,,Pokémon teema,,pokémon_teema,todo,perus,lasten,,,,
+,,,Pokémon Theme ,,pokémon_theme,todo,english,lasten,,,,
+,75,a,Puheenjohtajan juomalaulu,,puheenjohtajan_juomalaulu,sanat,oletus,NYT,Finlandssvensk Snapvisa,,,
+,76,a,Pumppulaulu,,pumppulaulu,sanat,leikit/kamalat,,,,,
+,77,a,Punschen Kommer,,punschen_kommer,sanat,snapsi,,,,,
+,,,Puuttuva palanen,,puuttuva_palanen,todo,biisit,,,,,
+,78,a,Raittiuslaulu,,raittiuslaulu,sanat,????,,,p,,
+,,,Rakaistuin mä klusteriin,,rakaistuin_mä_klusteriin,todo,väännöt,,säv. Rakastuin mä luuseriin & san. Sakari Väkevä,,,HYY:n sitsilaulukilpailun voittaja 2015
+,79,a,Rakenteisiin asti,,rakenteisiin_asti,sanat,väännöt,paikalliset,Kulkuset,,"Ei välttämättä, pitää tarkistaa","Vuosijuhlajatkoilla 2015 kävi inhimillinen tapaus, jonka johdosta oksennusta päätyi sohvalle. Asia päätettiin hoitaa aamulla. Tilan vuokraaja ilmoitti että oksennus oli päässyt sohvan rakenteisiin asti, ja hinattu jo kaatopaikalle. Yritys toimitti XXXX€ laskun, eikä suostunut antaa tai näyttää sohvaa järjestölle. "
+,,,Rati riti ralla,,rati_riti_ralla,todo,perus,lasten,Rati riti ralla,,,
+,80,a,Romanssi,,romanssi,sanat,neidot,,,p,,
+,81,a,Rosvo Roope,,rosvo_roope,sanat,väännöt,lasten,,,,
+,82,a,Ryyppää vaan,,ryyppää_vaan,sanat,oletus,,,,,
+,84,a,Ryyppy saapuu,,ryyppy_saapuu,sanat,väännöt,,Punchen Kommer,p,,
+,86,a,Sähkö ATK laulu,,sähkö_atk_laulu,sanat,????,kaanon,Lapin Kulta kaanon,pd,onks tää hypermedia tms ,
+,,,Sandstorm,Kansallislaulu,sandstorm,todo,special,,,,,
+,,,Sauna Nokia,,sauna_nokia,todo,biisit,meme,,,,
+,85,a,Sauvakirkon polttaja,,sauvakirkon_polttaja,sanat,väännöt,,Vanha hovikirkko,,,
+,87,a,Sisään,,sisään,sanat,????,,,,,
+,,,Skrillexin mökkitie,,skrillexin_mökkitie,sanat,special,,Tsunami,,,
+,88,a,Skumppaa punkun kaa,,skumppaa_punkun_kaa,sanat,väännöt,,,,,
+,89,a,Snapsien kaveri,,snapsien_kaveri,sanat,perus,,Ystävä sä lapsien,,,
+,90,a,Sörnai gusha,Sörkän sällit,sörnai_gusha,sanat,oletus,,Katjusha,,,
+,91,a,Suhteellisen rivakka turkulainen juomalaulu,,suhteellisen_rivakka_turkulainen_juomalaulu,sanat,????,NYT,Puheenjohtajan juomalaulu,pd,,
+,92,a,Syphilis,,syphilis,sanat,english,,Yesterday,,"Tarviiks Birth Control, tai tätä ollenkaan? ",
+,,,Taistelu Jaska - Theme,,taistelu_jaska_-_theme,todo,biisit,,,,dun dun dun dun dun TAAISTELU JASKA,
+,,,Take on Me,,take_on_me,todo,english,,,,,
+,93,a,Tänään otetaan,,tänään_otetaan,sanat,oletus,,Joulu on taas,,,
+\(\infty\),94,a,Teinilaulu,,teinilaulu,sanat,special,,,,,
+,,,TIETO - Value for Life,,tieto_-_value_for_life,sanat,biisit,hail corporate,,,,"Tieto julkaisi kappaleen sosiaaliseen mediaan XX.1.2017. Kovan tuotantoarvon musiikkivideolla oli Tiedon työntekijöitä laulamassa ylläolevaa laulua. Video otettiin yllättäen hyvin nopeasti alas. Tieto kommentoi myöhemmin että kappale oli tarkoitettu sisäiseen käyttöön ja ""pääsi jotenkin seulasta läpi""..."
+,95,a,Tietoliikennelaulu,,tietoliikennelaulu,sanat,väännöt,,,,,
+,96,a,Unkarin viini,,unkarin_viini,sanat,oletus,,,,,
+,97,a,Urhometso,,urhometso,sanat,väännöt,paikalliset,Ukkometso,,,
+,98,a,Varpunen jouluaamuna,,varpunen_jouluaamuna,sanat,oletukset,,,,,
+,,,Vem i Helvete?,,vem_i_helvete?,todo,perus,,Pas d’Espagne ,,,
+,99,a,Vesipoikien marssi,,vesipoikien_marssi,sanat,oletus,,Kapteeni katsoi horisonttihin,,,
+,100,a,Vi Ska Dricka Hela Natten,,vi_ska_dricka_hela_natten,sanat,oletus,,Jos sun lysti on,,,
+,101,a,Viidestoista vuosi,,viidestoista_vuosi,sanat,väännöt,,Viidestoista yö,,,
+v+1,102,a,Viinaa vetta,,viinaa_vetta,poistetaan,,,,d,(on jo olemassa),
+,103,a,Vit Vecka,,vit_vecka,sanat,snapsi,,,,,
+,104,a,Vitutuslaulu,"Voi saatana, voi perkele",vitutuslaulu,sanat,oletus,,,,,
+,105,a,Vodka vodka,,vodka_vodka,sanat,snapsi,,Stenka Rasin,,,
+,,,Volga,,volga,todo,biisit,,,,,
+,,,We Are Number One ,,we_are_number_one,todo,english,meme,Cast of Lazy Town,,,
+,,,What is Love?,,what_is_love?,todo,english,meme,Haddaway,,,
+,,,Wonderwall,,wonderwall,todo,english,,Oasis,,,
+,,,Yliopistoinnovaatio,,yliopistoinnovaatio,todo,perus,,Telefooni afrikassa,,matlulta,
+,106,a,Yogi Bear,,yogi_bear,sanat,english,,,p,"onks vittu pakko :D // ei ees mitään aatteellista, tuntuu vaan jotenkin loukkaavalta KVta vastaan et tää on ainut enkuks aina, ja kukaan ei nauti tästä ekan parin kerran jälkeen",
