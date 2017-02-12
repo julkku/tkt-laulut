@@ -18,7 +18,9 @@ def norm_name(s):
 
 
 def split_song(s):
+    has_title = False
     title = ""
+    has_melody = False
     melody = ""
     lyrics = []
 
@@ -31,11 +33,12 @@ def split_song(s):
         if in_lyrics:
             lyrics.append(line)
 
-        if len(title) == 0:
+        if not has_title:
+            has_title = True
             title = line.strip()
-        elif len(melody) == 0:
+        elif not has_title:
+            has_melody = True
             melody = line.strip()
-
 
     return "\n".join(lyrics), title, melody
 
