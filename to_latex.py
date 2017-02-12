@@ -133,7 +133,7 @@ def main(order_file, songs_file):
             order[row[5]] = {
                 "number": row[0] if len(row[0]) else None,
                 "title": row[3],
-                "melody": "(" + row[9] + ")",
+                "melody": row[9],
                 "alts": alts
             }
 
@@ -146,21 +146,6 @@ def main(order_file, songs_file):
             lines = "\n".join(lines)
             lines = lines.split("\n\n")
             lines[:] = [i.split("\n") for i in lines]
-            """
-            sakeistot = row[1].split("\n\n")
-            sakeet = [sakeisto.split("\n") for sakeisto in sakeistot]
-
-            sanat = []
-            for i in sakeet:
-                sakeisto = []
-                for j in i:
-                    if len(j):
-                        sakeisto.append(j.strip())
-                if len(sakeisto):
-                    sanat.append(sakeisto)
-            """
-            # sakeet[:] = [sae for sae in sakeet if len(sae)]
-            # from pprint import pprint; pprint(sanat)
             lyrics[row[0].strip()] = lines
 
     count = 0
@@ -184,7 +169,7 @@ def main(order_file, songs_file):
             "title": d["title"],
             "alternate_titles": d["alts"],
             "number": number,
-            "melody": d["melody"] if len(d["melody"]) else None,
+            "melody": "(" + d["melody"] + ")" if len(d["melody"]) else None,
             "lyrics": lyrics[i]
         })
 
