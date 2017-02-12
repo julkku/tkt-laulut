@@ -4,7 +4,7 @@ n,,,Name,alt ,Filename,Tilanne,Kategoria,Kategoria,Sävel,Flag (pd=pos.dup. d=du
 2,-,a,Maamme,Kansallislaulu,maamme,sanat,1kansallistms,,,,"// laitetaan tän nimen alle Sandstorm, ja Maamme alle oikea",
 3,5,a,De Brevitae Vitae,Gaudeamus Igitur,de_brevitae_vitae,sanat,1kansallistms,,,,,
 ,2,a,Aqua Vera,,aqua_vera,sanatok,2oletus,,Alle Vögel sind schon da / Terve teille lintuset,,,
-,4,a,Brännvin Vatten,"Viinaa, Vettä",brännvin_vatten,sanatok,2oletus,,Jeeper creepers / Kissa vieköön,,,
+,4,a,Brännvin Vatten,"""Viinaa, Vettä""",brännvin_vatten,sanatok,2oletus,,Jeeper creepers / Kissa vieköön,,,
 ,8,a,Eino Leinon juomalaulu,,eino_leinon_juomalaulu,sanat,2oletus,,Te Deum,,,
 ,9,a,Eurovision juomalaulu,Eurovision,eurovision_juomalaulu,sanat,2oletus,,Eurovision tunnari,,,
 ,15,a,Hauki ja viina,,hauki_ja_viina,sanat,2oletus,darra,,,,
@@ -98,7 +98,7 @@ n,,,Name,alt ,Filename,Tilanne,Kategoria,Kategoria,Sävel,Flag (pd=pos.dup. d=du
 ,76,a,Pumppulaulu,,pumppulaulu,sanat,5lasten,,,,,
 ,,,Teletappien juomalaulu,,teletappien_juomalaulu,sanat,5lasten,NYT,,,,
 ,,,Viinamaa,,viinamaa,sanat,5lasten,,Puuhamaa,,,
-,10,a,Felix,,felix,sanat,6.9liiteet,paikalliset,,,,Kappale kertoo TKO-älyn 2016 varapuheenjohtajasta nimeltään Felix. 
+,10,a,Felix,,felix,sanat,6.9liiteet,paikalliset,,,,Kappale kertoo TKO-älyn 2016 varapuheenjohtajasta nimeltään Felix.
 ,,,Skrillexin mökkitie,,skrillexin_mökkitie,sanat,6.9liitteet,,Tsunami,,,
 ,103,a,Vit Vecka,,vit_vecka,sanat,6perinne,,,p,,
 ,105,a,Vodka vodka,,vodka_vodka,sanat,6perinne,,Stenka Rasin,p,,
@@ -158,5 +158,5 @@ n,,,Name,alt ,Filename,Tilanne,Kategoria,Kategoria,Sävel,Flag (pd=pos.dup. d=du
 ,,,Wonderwall,,wonderwall,todo,9english,,Oasis,p,,
 ,106,a,Yogi Bear,,yogi_bear,sanat,9english,,,p,"onks vittu pakko :D // ei ees mitään aatteellista, tuntuu vaan jotenkin loukkaavalta KVta vastaan et tää on ainut enkuks aina, ja kukaan ei nauti tästä ekan parin kerran jälkeen",
 \(\infty\),94,a,Teinilaulu,,teinilaulu,sanat,n loppu,,,,,
-N,36,a,Ken on fuksi,ken onpi fuksi,ken_on_fuksi,sanat,n loppu,,,,,
+N,36,a,Ken on fuksi,,ken_on_fuksi,sanat,n loppu,,,,,
 N-1,53,a,Luonnontieteilijän uni,,luonnontieteilijän_uni,sanat,n loppu,,Sininen uni,,,
