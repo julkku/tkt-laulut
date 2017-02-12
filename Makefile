@@ -1,6 +1,7 @@
 all: laulukirja.pdf
 
 .PHONY: clean
+clean:
 	git clean -fx
 
 laulukirja.pdf: laulukirja.tex laulut.tex
