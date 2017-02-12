@@ -24,14 +24,24 @@ def index_hack(name):
     return prefix + "@" + name
 
 
-def line_hack(line):
+def line_hack(line, is_line=True):
     """Replace problematic characters with latex commands."""
+    if line is None:
+        return line
     line = line.replace("#", "\\#")
     line = line.replace("%", "\\%")
     line = line.replace("_", "\\_")
+    line = line.replace("&", "\\&")
     line = line.replace("|", "\\|")
+    line = line.replace("@", "\\@")
+    line = line.replace("$", "\\$")
+    line = line.replace("€", "\\euro")
     line = line.replace("+", "\\texttt{+}")
     line = line.replace(";,;", ":,:")
+
+    if not is_line:
+        return line
+
     # place :,: and # modifiers before line start
     if line.startswith(":,:"):
         line = "\\hspace{0pt-\\widthof{:,: }}" + line
@@ -47,16 +57,16 @@ def line_hack(line):
 def generate_song(data):
     out = []
 
-    title = data["title"]
-    melody = data["melody"]
+    title = line_hack(data["title"], False)
+    melody = line_hack(data["melody"], False)
     lyrics = data["lyrics"]
-    index = data["number"]
+    index = line_hack(str(data["number"]), False)
 
     out.append("%")
     out.append("% " + title)
     out.append("%")
     # set the section name to show in header
-    out.append(("\\sectionmark{{ {0}. {1} }}").format(index,title))
+    out.append(("\\sectionmark{{ {0}. {1} }}").format(index, title))
 
     # wrap title and first verse in the same minipage to prevent pagebreak between them
     out.append("\\noindent\\begin{minipage}{\\linewidth}")
