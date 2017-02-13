@@ -7,7 +7,7 @@
 \usepackage{expl3}
 \usepackage{calc} % widthof
 \usepackage{tabto}
-\usepackage{titlesec}
+\usepackage{titlesec} 
 \usepackage{fancyhdr} % headers
 \usepackage{etoolbox} % verse raggedright
 \usepackage[official]{eurosym} % euro character
@@ -17,6 +17,7 @@
 % set raggedright in index
 \usepackage[justific=raggedright,indentunit=0.2cm]{idxlayout}
 
+% right-justify verse lines properly
 \AtBeginEnvironment{verse}{\raggedright}
 
 % indent on newline
@@ -35,10 +36,6 @@
 \makeatletter
 \def\@hspace#1{\begingroup\setlength\dimen@{#1}\hskip\dimen@\endgroup}
 \makeatother
-
-{\makeatletter\gdef\reallynopagebreak{\par\nopagebreak\@nobreaktrue}}
-
-%\DeclareUnicodeCharacter{00A0}{~}
 
 \begin{document}
 \raggedbottom
