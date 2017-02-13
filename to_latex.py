@@ -113,6 +113,10 @@ def generate_song(data):
         # close minipage and add verse spacing
         out.append("\\end{minipage}\\\\[" + VERSE_SKIP + "]")
 
+    if (data["story"]):
+        out.append("\\emph{{ {0} }}\\\\[{1}]"
+          .format(line_hack(data["story"]), VERSE_SKIP))
+
     return "\n".join(out)
 
 
@@ -141,7 +145,8 @@ def main(order_file, songs_file):
                 "number": row[0] if len(row[0]) else None,
                 "title": row[3],
                 "melody": row[9],
-                "alts": alts
+                "alts": alts,
+                "story": row[12]
             }
 
     lyrics = {}
@@ -177,7 +182,8 @@ def main(order_file, songs_file):
             "alternate_titles": d["alts"],
             "number": number,
             "melody": "(" + d["melody"] + ")" if len(d["melody"]) else None,
-            "lyrics": lyrics[i]
+            "lyrics": lyrics[i],
+            "story": d["story"]
         })
 
     for i in data:
