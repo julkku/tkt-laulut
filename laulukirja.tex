@@ -22,8 +22,9 @@
 \pagestyle{fancy}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 \fancyhf{}
-\lhead{\rightmark}
-\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt} % optional: removes header line
+\fancyhead[LE,RO]{\rightmark}
+\fancyfoot[LE,RO]{\thepage}
 
 \makeindex[title=Hakemisto,intoc,columns=2]
 
