@@ -28,7 +28,7 @@ It should also tell quite well what to put in to the column.
 * Be careful with non-ascii non-finnish characters,
     they'll probably break the build.
 * Be careful with math characters,
-    they need to be surrounded with \( \).
+    they need to be surrounded with `\(` `\)`.
 * For italics use `\textit{Text to be italized.}`
     (and textbf similarly for bold).
   * Each line has to have their own commands (because LaTeX)...
