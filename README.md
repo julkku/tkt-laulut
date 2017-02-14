@@ -9,9 +9,13 @@ Laulattaako? No hätä, käpistelijät auttavat.
 # Data
 All lyrics and ordering and everythingelse is within
 two csv files, `lyrics.csv` and `ordering.csv`.
+These files are automatically downloaded from Google Sheets.
 
 The first line of these files is the header, and is skipped.
 It should also tell quite well what to put in to the column.
+
+## File format
+`TODO`
 
 # Song format
 * Seperate verses with a single empty line.
