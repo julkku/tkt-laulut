@@ -1,5 +1,5 @@
 \documentclass[8pt]{extbook}
-
+\usepackage[utf8]{inputenc}
 \usepackage[a5paper,verbose]{geometry}
 \usepackage{verse}
 \usepackage{imakeidx}
@@ -43,7 +43,19 @@
 \begin{document}
 \begin{multicols}{2}
 \raggedbottom
+\begin{titlepage}
+	\centering
+	{\scshape\LARGE JÄRJESTÖ \par}
+	\vspace{1cm}
+	{\scshape\Large JOTAIN\par}
+	\vspace{1.5cm}
+	{\huge\bfseries SITSIEN NIMI\par}
 
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
 \small
 \input{laulut.tex}
 
