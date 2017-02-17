@@ -80,7 +80,7 @@ def generate_song(data):
     out.append(SONGTITLE_PRE_SKIP)
 
     # song number offset by correct amount
-    out.append("\\hspace{{{2}-\\widthof{{\\large\\bf {0}.{1}}}}}{{\\large\\bf {0}.{1}}}"
+    out.append("{{\\large\\bf {0}.{1}}}"
         .format(index, SONG_NUMBER_SEP, SONGTITLE_INDENT))
 
     # song title in parbox for line wrapping

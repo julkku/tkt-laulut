@@ -1,7 +1,6 @@
-\documentclass[9pt]{extbook}
+\documentclass[8pt]{extbook}
 
-\usepackage[a6paper, portrait, outer=0.5cm, inner=1.5cm, tmargin=1.7cm, bmargin=1.5cm]{geometry}
-\usepackage[utf8]{inputenc}
+\usepackage[a5paper,verbose]{geometry}
 \usepackage{verse}
 \usepackage{imakeidx}
 \usepackage{expl3}
@@ -12,6 +11,8 @@
 \usepackage{etoolbox} % verse raggedright
 \usepackage[official]{eurosym} % euro character
 \usepackage{wasysym} % note character
+\usepackage{graphicx}
+\graphicspath{ {/} }
 
 % fix index indent on linewrap
 % set raggedright in index
@@ -37,7 +38,10 @@
 \def\@hspace#1{\begingroup\setlength\dimen@{#1}\hskip\dimen@\endgroup}
 \makeatother
 
+\usepackage{multicol}
+ 
 \begin{document}
+\begin{multicols}{2}
 \raggedbottom
 
 \small
@@ -45,4 +49,5 @@
 
 \printindex
 
+\end{multicols}
 \end{document}
