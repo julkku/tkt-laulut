@@ -92,9 +92,7 @@ def generate_song(data):
     out.append(t)
 
     # add index entry for title and any alternate titles
-    for name in [title] + data["alternate_titles"]:
-    	out.append("\\index{{{}}}".format(index_hack(name)))
-
+   
     first = True
 
     for verse in lyrics:
