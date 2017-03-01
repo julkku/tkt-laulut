@@ -13,6 +13,8 @@
 \usepackage{wasysym} % note character
 \usepackage{graphicx}
 \graphicspath{ {/} }
+\usepackage{wasysym} %male symbol
+
 
 % fix index indent on linewrap
 % set raggedright in index
@@ -40,26 +42,43 @@
 
 \usepackage{multicol}
  
+	\addtolength{\oddsidemargin}{-.600in}
+	\addtolength{\evensidemargin}{-.600in}
+	\addtolength{\textwidth}{1.2in}
+
+	\addtolength{\topmargin}{-.600in}
+	\addtolength{\textheight}{1.2in}
+ 
 \begin{document}
-\begin{multicols}{2}
 \raggedbottom
 \begin{titlepage}
 	\centering
-	{\scshape\LARGE JÄRJESTÖ \par}
+	{\scshape\LARGE Järjestö \par}
 	\vspace{1cm}
-	{\scshape\Large JOTAIN\par}
+	{\scshape\Large Otsikkoa\par}
 	\vspace{1.5cm}
-	{\huge\bfseries SITSIEN NIMI\par}
+	{\huge\bfseries Sitsit\par}
 
-	\vfill
 
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.35]{}
+%\end{figure}
 % Bottom of the page
-	{\large \today\par}
 \end{titlepage}
+Yhteistyössä:
+\begin{figure}[h!]
+\includegraphics[scale=0.35]{apua.png}
+\end{figure}
+\begin{multicols}{2}
+
+
 \small
 \input{laulut.tex}
+
 
 \printindex
 
 \end{multicols}
+
 \end{document}
