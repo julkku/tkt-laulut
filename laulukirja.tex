@@ -1,4 +1,4 @@
-\documentclass[9pt]{extbook}
+\documentclass{book}
 
 \usepackage[a6paper, portrait, outer=0.5cm, inner=1.5cm, tmargin=1.7cm, bmargin=1.5cm]{geometry}
 \usepackage[utf8]{inputenc}
@@ -15,7 +15,7 @@
 
 % fix index indent on linewrap
 % set raggedright in index
-\usepackage[justific=raggedright,indentunit=0.2cm]{idxlayout}
+\usepackage[justific=raggedright,indentunit=0.1cm,columnsep=0.3cm]{idxlayout}
 
 % right-justify verse lines properly
 \AtBeginEnvironment{verse}{\raggedright}
@@ -31,17 +31,31 @@
 \fancyhead[LE,RO]{\rightmark}
 \fancyfoot[LE,RO]{\thepage}
 
-\makeindex[title=Hakemisto,intoc,columns=2]
+% rename index and apply .ist style
+\makeindex[title=Hakemisto,options= -s hakemisto.ist]
 
 \makeatletter
 \def\@hspace#1{\begingroup\setlength\dimen@{#1}\hskip\dimen@\endgroup}
+% format index title
+\def\@makeschapterhead#1{%
+  {\parindent \z@ \raggedright \normalfont
+    \interlinepenalty\@M
+    \large \bfseries #1\par\nobreak
+    \vskip 10\p@
+  }}
 \makeatother
+
 
 \begin{document}
 \raggedbottom
 
-\small
+\footnotesize
 \input{laulut.tex}
+
+% set header string
+\pagebreak
+\fancyhead[LE,RO]{{}}
+
 
 \printindex
 
