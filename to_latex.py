@@ -13,6 +13,7 @@ SONGTITLE_INDENT = "20pt"
 SONGTITLE_PRE_SKIP = "\\vspace{5pt}"
 SONGTITLE_POST_SKIP = "\\[6pt]"
 VERSE_SKIP = "10pt"
+PURKKA_INDENT = "10pt"
 
 
 def index_hack(name):
@@ -76,7 +77,8 @@ def generate_song(data):
     out.append(("\\sectionmark{{ {0}. }}%").format(index))
 
     # wrap title and first verse in the same minipage to prevent pagebreak between them
-    out.append("\\noindent\\begin{minipage}{\\linewidth}")
+    out.append("\\noindent\\hspace{{{0}}}\\begin{{minipage}}{{\\linewidth-{0}}}"
+        .format(PURKKA_INDENT))
     out.append(SONGTITLE_PRE_SKIP)
 
     # song number offset by correct amount
@@ -100,7 +102,8 @@ def generate_song(data):
     for verse in lyrics:
         # start a new minipage if not the first verse
         if not first:
-            out.append("\\noindent\\begin{minipage}{\\linewidth}")
+            out.append("\n\\noindent\\hspace{{{0}}}\\begin{{minipage}}{{\\linewidth-{0}}}"
+                .format(PURKKA_INDENT))
         else:
             first = False
 
